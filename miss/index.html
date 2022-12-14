@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="div" id="text"></div>
+        <span></span>
+    </div>
+
+     <div class="area" >
+        <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+        </ul>
+</div >
+
+    <script>
+        const prog = "HAPPY BIRTHDAY MISS YEN";
+        const div = document.getElementById('text');
+        let index = 1;
+        setInterval(write,400);
+
+        function write(){
+            div.innerHTML = prog.slice(0,index);
+            index++;
+           
+            if (index > prog.length) {
+                index = 1;
+            }
+           
+        }
+
+    </script>
+</body>
+</html>
