@@ -4,38 +4,43 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: myfont;
+    src: url('HoneyScript-SemiBold.ttf');
+}
 body{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    font-family: quicksand;
+    min-height: 80vh;
+    font-family: myfont;
     background: #33CCCC; /* Fallback */
     animation: color 9s infinite linear;
     text-align: center;
     padding: 2em;
 }
 
-.container{
+/* .container{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1px;
-}
-span{
-    width: 3px;
-    height: 40px;
-    background-color: white;
-    border-radius: 30px;
-    animation: spancolor 9s infinite linear;
-}
+} */
+
 .div{
-    font-size:1.4rem;
+    font-size:5rem;
+    text-transform: capitalize;
     color: #fce300;
     font-weight: 700;
     animation: textcolor 9s infinite linear;
 }
-
+span{
+    width: 10px;
+    height: 70px;
+    background-color: white;
+    border-radius: 30px;
+    animation: spancolor 9s infinite linear;
+}
 
 @keyframes color {
     0%   { background: #33CCCC; }
@@ -56,12 +61,12 @@ span{
 
 
 @keyframes textcolor {
-    0%   { color: #b3d9b4; }
-    20%  { color: #f5f5f5; }
-    40%  { color: #3340cc; }
+    0%   { color: #d9dc22; }
+    20%  { color: #127f93; }
+    40%  { color: #3387cc; }
     60%  { color: #fc00ef; }
-    80%  { color: #7033cc; }
-    100% { color: #cc3333; }
+    80%  { color: #c45db9; }
+    100% { color: #e8eb37; }
   }
   
  
