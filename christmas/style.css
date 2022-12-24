@@ -1,0 +1,258 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: brush script Mt ;
+    src: url('font/BRUSHSCI.ttf');
+}
+title{
+    font-size: 1rem;
+    color: red;
+    text-transform: capitalize;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: rgb(225, 221, 221);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(222, 12, 12);
+    border-radius: 30px;
+}
+ 
+body {
+    overflow: hidden;
+}
+
+.count {
+    height: 100vh;
+    width: 100vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+}
+
+
+
+.head {
+    min-height: 50vh;
+    background-image: url('image/19416838_20_christmas_Mesa_de_trabajo_1.jpg');
+    width: 100%;
+    background-position: cover;
+    background-size: 100% 80%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.christmass {
+    position: absolute;
+    top: 200px;
+    width: 70%;
+    left: 10px;
+    border-radius: 4px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(153, 147, 147, 0.851), rgba(253, 242, 242, 0.827));
+}
+
+.christmass h3 {
+    text-transform: capitalize;
+    font-family: brush script Mt;
+    font-size: 1.5rem;
+    color: rgb(192, 44, 44);
+}
+
+.christmass .counts {
+    display: flex;
+    gap: 5px;
+}
+
+.count__to h1,
+.count__to p {
+    font-family: brush script Mt;
+    color: rgb(185, 45, 45);
+}
+.count__to h1{
+    font-size: 1.4rem;
+}
+.count__to p{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    width: 30%;
+}
+
+.logo span:first-of-type {
+    padding: 5px;
+    background-color: rgb(210, 18, 18);
+    border-radius: 4px;
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    font-family: brush script Mt;
+}
+
+
+.logo span:last-of-type {
+    font-family: brush script Mt;
+    font-size: 1.8rem;
+    color: rgb(210, 18, 18);
+    font-weight: 500;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.haburger div {
+    height: .2rem;
+    width: .5rem;
+    margin: .2rem;
+    background: rgb(210, 18, 18);
+    border-radius: 30px;
+}
+
+.haburger .first {
+    width: 1.3rem;
+}
+
+.haburger .second {
+    width: .9rem;
+}
+
+.haburger .third {
+    width: .7rem;
+}
+
+.count_down {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.share {
+    width: 50px;
+    height: 50px;
+    background: white;
+    box-shadow: 0px 5px 10px 4px rgba(0, 0, 0, 0.07);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    position: absolute;
+    right: 10px;
+    bottom: 3em;
+    transition: .3s ease;
+}
+
+.share:hover{
+    box-shadow: 0px 5px 10px 4px rgba(0, 0, 0, 0.07); 
+    transform: translateY(-10px);
+}
+
+.fill {
+    fill: rgb(210, 18, 18);
+}
+
+.wishes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+
+}
+
+.wish {
+    padding: 10px;
+    text-align: center;
+    background: white;
+    box-shadow: 3px 5px 10px 7px rgba(0, 0, 0, 0.07);
+    border-radius: 5px;
+    width: 90%;
+
+}
+
+.wish h2,
+span {
+    font-family: brush script Mt;
+    font-size: 2.5rem;
+    color: rgb(195, 32, 32);
+    text-transform: capitalize;
+}
+
+h2 span {
+    color: rgb(222, 12, 12);
+    text-decoration: underline;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    width: 100%;
+
+}
+
+input {
+    width: 80%;
+    border-radius: 5px 0 0 5px;
+    background: #fff;
+    outline: none;
+    font-size: 2rem;
+    color: rgb(195, 32, 32);
+    padding: 10px;
+    border: 2px solid rgb(195, 32, 32);
+    font-family: brush script Mt;
+    box-shadow: 3px 5px 10px 7px rgba(211, 57, 57, 0.178);
+}
+
+form button {
+    /* padding: 10px; */
+    background: transparent;
+    outline: none;
+    border: none;
+    height: 64px;
+    box-shadow: 3px 5px 10px 7px rgba(211, 57, 57, 0.177);
+
+}
+
+.with {
+    fill: white;
+    display: block;
+    width: 50px;
+    height: 100%;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 0 5px 5px 0;
+    background-color: rgb(210, 18, 18);
+}
+
+.small{
+    width: 50px;
+    height: 100%;
+    margin-top: .3rem;
+}
